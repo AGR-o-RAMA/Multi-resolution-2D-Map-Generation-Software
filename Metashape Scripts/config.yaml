@@ -1,0 +1,12 @@
+
+tile_size: 400
+start_x: 0
+start_y: 0
+  
+tiles_path: '/home/mulham/agrorama/output/output_exp/tiles/'
+tiles_dic: '/home/mulham/agrorama/delever/tiles_dic_synthetic_field.txt'
+
+images_path: '/home/mulham/agrorama/agrorama/basic_v2_5mm/rgb/'
+project_back_path: '/home/mulham/agrorama/output/output_exp/'
+
+tile_names: tile2_9
