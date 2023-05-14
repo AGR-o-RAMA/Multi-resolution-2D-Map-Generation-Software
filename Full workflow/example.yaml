@@ -1,77 +1,95 @@
-
-
+# Description: Configuration file for the Project
+# Load Project
 load_project: ""
-photo_path: "/home/mulham/agrorama/wetransfer_15mt-eo_2023-03-08_1329/part_of_the_images"  # "/home/mulham/agrorama/wetransfer_15mt-eo_2023-03-08_1329/15mt_EO"
+
+# Path to the directory containing the photos
+photo_path: ""
+
+# Output path for saving the generated results
 output_path: " "
+
+# Path to the project file
 project_path: " "
 
+# Run name for the project
 run_name: "example-run-001"
 
-
+# Coordinate Reference System (CRS) for the project
 project_crs: "EPSG::4326" #"EPSG::26910" 
 
+# Subdivide task option
 subdivide_task: True
+
+# Use CUDA for processing if available
 use_cuda: True
 
-alignPhotos: 
-    enabled: True
-    downscale: 2 
-    adaptive_fitting: True
-    keep_keypoints: True
-    reset_alignment: False
-    generic_preselection: True 
-    reference_preselection: True
-    reference_preselection_mode: Metashape.ReferencePreselectionSource
+# Align Photos settings
+alignPhotos:
+  enabled: True
+  downscale: 2
+  adaptive_fitting: True
+  keep_keypoints: True
+  reset_alignment: False
+  generic_preselection: True
+  reference_preselection: True
+  reference_preselection_mode: Metashape.ReferencePreselectionSource
 
+# Filter Points USGS settings
 filterPointsUSGS:
-    enabled: False
-    rec_thresh_percent: 20
-    rec_thresh_absolute: 15
-    proj_thresh_percent: 30
-    proj_thresh_absolute: 2
-    reproj_thresh_percent: 5
-    reproj_thresh_absolute: 0.3
+  enabled: False
+  rec_thresh_percent: 20
+  rec_thresh_absolute: 15
+  proj_thresh_percent: 30
+  proj_thresh_absolute: 2
+  reproj_thresh_percent: 5
+  reproj_thresh_absolute: 0.3
 
+# Optimize Cameras settings
 optimizeCameras:
-    enabled: True
-    adaptive_fitting: True
+  enabled: True
+  adaptive_fitting: True
 
+# Build Point Cloud settings
 buildPointCloud:
-    enabled: True
-    downscale: 2 
-    filter_mode: Metashape.ModerateFiltering 
-    reuse_depth: False 
-    keep_depth: False
-    max_neighbors: 100 
-    classify_ground_points: True 
-    export: True
-    classes: "ALL" 
-    
+  enabled: True
+  downscale: 2
+  filter_mode: Metashape.ModerateFiltering
+  reuse_depth: False
+  keep_depth: False
+  max_neighbors: 100
+  classify_ground_points: True
+  export: True
+  classes: "ALL"
+
+# Classify Ground Points settings
 classifyGroundPoints:
-    max_angle: 15.0
-    max_distance: 1.0
-    cell_size: 50.0
+  max_angle: 15.0
+  max_distance: 1.0
+  cell_size: 50.0
 
+# Build DEM (Digital Elevation Model) settings
 buildDem:
-    enabled: True
-    classify_ground_points: False 
-    type: "both" 
-    export: True
-    tiff_big: True
-    tiff_tiled: False
-    nodata: -32767 
-    tiff_overviews: True
+  enabled: True
+  classify_ground_points: False
+  type: "both"
+  export: True
+  tiff_big: True
+  tiff_tiled: False
+  nodata: -32767
+  tiff_overviews: True
 
+# Build Orthomosaic settings
 buildOrthomosaic:
-    enabled: True
-    surface: "DTMandDSM"
-    usgs_dem_path: "dem_usgs/dem_usgs.tif"
-    usgs_dem_crs: "EPSG::4326" # "EPSG::4269"
-    blending: Metashape.MosaicBlending
-    fill_holes: True
-    refine_seamlines: True 
-    export: True
-    tiff_big: True
-    tiff_tiled: False 
-    nodata: -32767 
-    tiff_overviews: True
+  enabled: True
+  surface: "DTMandDSM"
+  usgs_dem_path: "dem_usgs/dem_usgs.tif"
+  usgs_dem_crs: "EPSG::4326" # "EPSG::4269"
+  blending: Metashape.MosaicBlending
+  fill_holes: True
+  refine_seamlines: True
+  export: True
+  tiff_big: True
+  tiff_tiled: False
+  nodata: -32767
+  tiff_overviews: True
+

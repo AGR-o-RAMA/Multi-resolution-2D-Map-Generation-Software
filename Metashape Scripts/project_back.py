@@ -54,7 +54,7 @@ def main():
 	chunk = doc.chunk
 	if not len(doc.chunks):
 	    raise Exception("No chunks!")
-	with open('/home/mulham/agrorama/output/config.yaml', 'r') as stream:
+	with open('config.yaml', 'r') as stream:
 		try:
 			data = yaml.safe_load(stream)
 		except yaml.YAMLError as exc:

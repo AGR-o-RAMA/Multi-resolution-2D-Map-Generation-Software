@@ -35,8 +35,8 @@ def project_setup(cfg, config_file):
     run_name = cfg["run_name"]
 
     if(run_name == "from_config_filename"):
-        file_basename = os.path.basename(config_file) # extracts file base name from path
-        run_name, _ = os.path.splitext(file_basename) # removes extension
+        file_basename = os.path.basename(config_file) 
+        run_name, _ = os.path.splitext(file_basename) 
 
     timestamp = stamp_time()
     run_id = "_".join([run_name,timestamp])
