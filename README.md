@@ -22,5 +22,6 @@ Image Projection and Cropped Image Extraction: After tiling the orthomosaic map,
 	- Orthomosaic Map Creation: By combining the rectified images, the script generates a 	visually consistent and georeferenced orthomosaic map.
 
 2- Tiling: After generating the orthomosaic map, the software divides it into smaller tiles by partitioning the map into rectangular or square regions of a predetermined size. This facilitates efficient management, processing, and analysis of large-scale maps.
+
 3- Tile Projection and Cropped Image Extraction: The software projects each tile back to the original images that contributed to the orthomosaic map. By utilizing spatial information captured during the orthomosaic generation, it accurately identifies the relevant portions of the original images that overlap with each tile. Cropped images representing the specific portions of the original images are extracted, preserving the necessary spatial context and visual information for subsequent analysis and processing.
 
