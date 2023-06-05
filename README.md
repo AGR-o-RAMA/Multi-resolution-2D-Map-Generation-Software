@@ -1,4 +1,4 @@
-# Code Repository for Agro-rama Project - Deliverable D1.2 Multi-resolution 2D Map Generation Software
+# Code Repository for AGR-O-RAMA Project - Deliverable D1.2 Multi-resolution 2D Map Generation Software
 This repository contains the code for the Agro-rama project's Deliverable D1.2, which focuses on the development of a multi-resolution 2D map generation software. The software is designed to automate the process of generating orthomosaic maps and extracting tiles from the maps for targeted analysis.
 ![alt text](https://github.com/Mulham91/AGR-O-RAMA/blob/main/images/exp.png)
 
