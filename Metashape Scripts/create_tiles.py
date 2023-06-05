@@ -4,7 +4,7 @@ import yaml
 import os
 
 def create_tiles():
-	with open('config.yaml', 'r') as stream:
+	with open('/home/mulham/agrorama/cloned_repo/AGR-O-RAMA/Metashape Scripts/config.yaml', 'r') as stream:
 		try:
 			data = yaml.safe_load(stream)
 		except yaml.YAMLError as exc:

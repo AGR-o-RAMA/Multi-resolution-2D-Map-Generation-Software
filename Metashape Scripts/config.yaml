@@ -1,24 +1,24 @@
 # Description: Configuration file for the Project Back script & Create_tiles
 
 # Tile size
-tile_size: 400
+tile_size: 200
 
 # Tiles starting point
 start_x: 0
 start_y: 0
 
 # Directory path where to output the tiles
-tiles_path: 'tiles/'
+tiles_path: '/home/mulham/agrorama/AGR-O-RAMA/Full workflow/tiles/'
 
 # File path of the tiles dictionary that contains the tile name and the pixel coordinates
-tiles_dic: 'tiles_dic.txt'
+tiles_dic: '/home/mulham/agrorama/AGR-O-RAMA/Full workflow/tiles_dic.txt'
 
 # Directory path of the input RGB images used to create the orthomosaic
-images_path: 'rgb_images/'
+images_path: '/home/mulham/agrorama/wetransfer_15mt-eo_2023-03-08_1329/part_of_the_images/'
 
 # Path to save the output of the part of the image that contains the projected tiles
-project_back_path: '/'
+project_back_path: '/home/mulham/agrorama/AGR-O-RAMA/Full workflow/two_hight_project /example-run-001_20230506T0155.psx/'
 
 # Name of the tile to be projected
-tile_names: tile2_9
+tile_names:  tile30_43  #tile2_9
 
