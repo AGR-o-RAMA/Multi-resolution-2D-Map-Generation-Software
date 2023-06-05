@@ -4,7 +4,9 @@ This repository contains the code for the Agro-rama project's Deliverable D1.2, 
 
 # Features and Advantages
 Orthomosaic Map Generation: The software leverages the power of Metashape to generate accurate orthomosaic maps. It performs image alignment, point cloud generation, mesh and texture generation, and orthorectification, resulting in high-quality orthomosaic maps.
+
 Tiling for Efficient Analysis: The software includes functionality to divide the generated orthomosaic map into smaller tiles. This tiling process improves efficiency by reducing computational and memory requirements. It also allows for easier navigation and targeted analysis of specific areas of interest within the map.
+
 Image Projection and Cropped Image Extraction: After tiling the orthomosaic map, the software projects each tile back to the original images used for map creation. By leveraging spatial information, it identifies the corresponding regions in the source images that overlap with each tile. This enables the extraction of cropped images, which retain the necessary spatial context and visual information for subsequent analysis and processing tasks.
 # Usage
 - Ensure that the Metashape software is installed on your system.
